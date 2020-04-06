@@ -1,6 +1,7 @@
 The Romcom Expert:
 By Dana Zhang
 
+To make everything work, just run the app.py file. 
 Introduction:
 
 Being a cinephine, there is always an awkwardness when dicussing the neglected child of cinema, the romantic comedy. Once a staple of the movie industry, the romantic comedy is became a genre niche, almost treated as a guilty pleasure when discussed as cinema. While the superhero boom in the movie industry guarantees the survival of action movies, the romantic comedy seems to have lost its favor within the movie industry. 
