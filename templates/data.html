@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Data </title>
+  <meta charset="UTF-8"/>
+  <link rel="stylesheet" href="./static/bootstrap.css"/>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+
+  <body>
+    <nav name="top" class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" onClick="goHome">The RomCom Expert</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor02">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href='./home.html'>Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" onClick="window.location.reload();">Data<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./graphs.html">Graphs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="randomPosterUrl">Click Me</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search"/>
+            <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+    </nav>
+
+    <div class="jumbotron">
+      <div class="container">
+        <div class="row">   
+          <div class="lead col">
+            <h1 class="display-3">The Data</h1>
+            <p>The Open Movie Database, also known as OMDbAPI (http://www.omdbapi.com/), is an online API for movie data. The data is accessible but only through a specific imdbID or title. For this romantic comedy filter, I used the list provided by wikipedia under the list of romantic comedy films ("https://en.wikipedia.org/wiki/List_of_romantic_comedy_films"). This was the closest comprehensive list of romantic comedies and is a general representation of the pantheon of romantic comedies.</p>
+            <p>If exploring from the Python Flask Powered RESTful API, to explore the full json data file, use one of the following extensions:</p>
+            <ol>
+              <li>/title/"the title"</li>
+              <li>/id/"imdbID"</li>
+            </ol>
+            <p>The following movie selection is provided by Wikipedia, and the following data is provided by OMDbAPI.</p>
+          </div>
+        </div>
+        <div class="row">
+        <table class="table table-hover">
+            <div class="btn-group" role="group" aria-label="Basic example">
+              <thead id="pickHead" onload="createTable();"></thead>
+              <tbody id="pickData" onload="createTable();"></tbody>
+              <button type="button" class="btn btn-secondary btn-dark" onclick="createTable();">Movie Info</button>
+              <thead id="pickHead" onload="createDataTable();"></thead>
+              <tbody id="pickData" onload="createDataTable();"></tbody>
+              <button type="button" class="btn btn-secondary btn-dark" onclick="createDataTable();">Data Example</button>
+            </div>
+          </table>
+        </div>
+        </div>
+    </div> 
+  <script src="./static/romcomApiUrl.js" type="text/javascript"></script>  
+  <script src="./static/dataTable.js" type="text/javascript"></script>   
+  <script src="./static/all.js" type="text/javascript"></script>  
+</body>

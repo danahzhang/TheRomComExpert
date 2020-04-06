@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>The RomCom Expert </title>
+  <meta charset="UTF-8"/>
+  <link rel="stylesheet" href="./static/bootstrap.css"/>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <nav name="top" class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" onClick="goHome">The RomCom Expert</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarColor02">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" onClick="window.location.reload();">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./data.html">Data</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./graphs.html">Graphs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="randomPosterUrl">Click Me</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search"/>
+          <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+  <div class="jumbotron">
+    <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h1 class="display-3">Why RomCom?</h1>
+        <p>
+          Once a staple of classic Hollywood, "the romantic comedy" became a now realized more niche genre. While the mass appeal of beautiful people in humorous situations falling in love is fantasy, when had movies been completely and utterly about the truth. 
+        </p>
+        <p>The movie industry is an industry, with companies looking at the bottom line. While romantic comedies might not be everyone's cup of tea, as long as it is profitable for the movie industry to make such films, they will continue to do so. Over the recent years, I have felt a decline in the number of romanitc comedies released, especially compare to the previous decade. The purpose of this data exploration is to find out the following:</p>
+        <ol>
+          <li>Has there been a decline in romantic comedy films in the industry?</li>
+          <li>Are romantic comedy films profitable?</li>
+          <li>Do people enjoy such films?</li>
+        </ol>
+      </div>
+      <div class="col-md-6" id="randomPosterUrl">
+        <img id="randomPosterPic"/>              
+      </div>  
+    </div>      
+    </div>
+  </div>
+
+
+  <script src="./static/romcomApiUrl.js" type="text/javascript"></script>  
+  <script src="./static/all.js" type="text/javascript"></script>                
+</body>
+
+</html>
