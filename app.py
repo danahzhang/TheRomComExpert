@@ -8,7 +8,7 @@ from flask import Flask, jsonify, render_template, make_response, abort
 #Import Files
 print("Warning!!!\n")
 print("You should run the short version because the long version will take hours!!!")
-question = input("Long(l) or Short(s)":)
+question = input("Long(l) or Short(s): ")
 if question.lower() =="l":
     print("You picked the short option.")
     import json_create_long
