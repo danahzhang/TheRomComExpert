@@ -41,7 +41,7 @@ function createTable(){
 var romcomHeadData = '<thead><tr><th scope="col">Title</th><th scope="col">Year</th><th scope="col">imdb ID</th><th scope="col">imdb Score</th><th scope="col">MetaCritic Score</th><th scope="col">Box Office</th></tr></thead>';
 
 var romcomTableData = "";
-for (var i = 0; i < (urls.url.length); i++) {
+for (var i = aNumber; i < aNumber+100; i++) {
 
     $.getJSON(urls.url[i], function theTableData(data) {
         var movie_data = '';
