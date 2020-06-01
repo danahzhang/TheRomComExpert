@@ -30,7 +30,7 @@ Data Front:
 
 To explore these facets of the romantic comedy film industry, I have utilized OMDb API (http://www.omdbapi.com), a open movie database. This API provide a movie's data give the correct title or imdbID.
 
-For the list of romantic comedies, I have originally and currently am using the Wikipedia List on romantic comedy films (https://en.wikipedia.org/wiki/List_of_romantic_comedy_films), which provides a somewhat comphrehensive list. I'm currently also trying to use an extremely large list (over 15000) from imdb but due to the size, the processing has been too slow to see if it's possible. (Efforts in json_creat_long.py)
+For the list of romantic comedies, I have originally and currently am using the Wikipedia List on romantic comedy films (https://en.wikipedia.org/wiki/List_of_romantic_comedy_films), which provides a somewhat comphrehensive list. I'm currently also trying to use an extremely large list (over 15000) from imdb but due to the size, the processing has been too slow to see if it's possible. (Efforts in json_create_long.py)
 
 json_create.py
 
